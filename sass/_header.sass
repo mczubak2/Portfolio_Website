@@ -1,0 +1,64 @@
+.header
+    position: relative
+    height: 100vh
+    width: 100%
+    background-color: $dark
+    color: white
+    line-height: 65px
+    h1
+        position: absolute
+        font-size: 28px
+        top: 50vh
+        left: 50%
+        width: 90%
+        transform: translate(-50%,-50%)
+        text-align: center
+        font-weight: 500
+        z-index: 1
+        animation: header 1s 1s both
+        span
+            font-size: 33px
+            // color: $light
+            // text-transform: uppercase
+            // background: -webkit-linear-gradient(#E483EB,$light )
+            // background-clip: text
+            // -webkit-background-clip: text
+            // -webkit-text-fill-color: transparent
+        .name
+            background-color: white
+    .hand
+        position: absolute
+        bottom: 10%
+        left: 50%
+        transform: translate(-50%,-50%)
+        font-size: 50px
+        color: $light
+        transition: .2s
+        opacity: .7
+        animation: finger 5s 2s infinite ease both, header 1s 2s both
+        &:active
+            opacity: .4
+            
+nav
+    width: 100%
+    position: sticky
+    top: 0
+    height: 50px
+    border-bottom: 3px $border solid
+    background-color: $dark
+    z-index: 1
+    
+    .mobile
+        display: block
+        position: absolute
+        right: 0
+        top: 0
+        height: 50px
+        width: 50px
+        font-size: 30px
+        text-align: center
+        line-height: 50px
+        color: white
+        z-index: 2
+        &:active
+            opacity: .3

@@ -1,0 +1,238 @@
+@media ( max-width: 374px)
+    .header
+        h1
+            font-size: 25px
+            span
+                font-size: 30px
+
+@media (orientation: landscape) and (max-width: 640px) and (max-height: 360px)
+    .socials
+        a
+            display: none
+    .footer
+        min-height: 300vh
+
+@media (orientation: landscape) and (max-width: 640px)
+    .wrapper
+        min-height: 1000vh
+    .header
+        h1
+            font-size: 25px
+            span
+                font-size: 30px
+    .portfolio
+        min-height: 300vh
+    .footer
+        min-height: 180vh
+        h2
+            margin: 30vh 0 20vh 0
+        p
+            top: 45vh
+        .message
+            bottom: 20px
+
+@media (min-width: 680px)
+    .project:nth-child(1)
+        grid-column: span 2
+
+@media (orientation: landscape) and (max-width: 1024px)
+
+    .portfolio
+        min-height: 100vh
+
+    .footer
+        min-height: 100vh
+        margin-top: 100px
+        h2
+            margin: 20vh 0 20vh 0
+        p
+            top: 35vh
+        .message
+            bottom: 20vh
+            input:nth-child(3)
+                padding-bottom: 20vh
+
+@media (orientation: landscape) and (max-width: 1024px) and (max-height: 640px)
+
+    .footer
+        min-height: 150vh
+        h2
+            margin: 30vh 0 20vh 0
+        p
+            top: 45vh
+        .message
+            bottom: 20vh
+            input:nth-child(3)
+                padding-bottom: 20vh
+
+// PC
+
+@media screen and (min-width: 1024px)
+    .header
+        h1
+            font-size: 40px
+            span
+                font-size: 45px
+        .hand
+            text-align: center
+            font-size: 60px
+            transition: .3s
+            text-align: center
+            &:hover
+                transform: translate(-50%,-50%) scale(1.2)
+
+    nav
+        height: 40px
+        .mobile
+            display: none
+        .desktop
+            display: flex
+            justify-content: end
+            li
+                list-style: none
+                flex-basis: 10%
+                text-align: center
+                a
+                    display: block
+                    text-decoration: none
+                    height: 40px
+                    line-height: 40px
+                    color: white
+                    text-transform: uppercase
+                    transition: .2s
+                    &:hover
+                        color: $light
+    .about
+        .text
+        .web
+            &::after
+                width: 30%
+    .container
+        margin: 90px 0 110px 0
+        .card
+            &:hover 
+                .face
+                    cursor: none
+                .face1
+                    transform: translateY(0)
+                    background-color: $dark
+                    opacity: 1
+                    color: white
+                .content
+                    opacity: 1
+                    h3
+                        color: white
+                .face2
+                    transform: translateY(0)
+            .face1
+                transform: translateY(50%)
+            .face2
+                transform: translateY(-50%)
+    .technologies
+        margin: 30px 0 60px
+        .text
+        .tech
+            &::after
+                width: 30%
+        .boxes
+
+            .box
+                &:hover
+                    cursor: none
+                    .box-front
+                        opacity: 0
+                    .box-back
+                        opacity: 1
+    
+    .projects
+        width: 1000px
+        .project
+            &:hover
+                .front
+                    transform: scale(0.95)
+                    opacity: 1
+                .back
+                    opacity: 0
+                    button
+                        &:hover
+                            transform: scale(1.2)
+                    
+
+    .project:nth-child(1)
+        grid-row: span 2
+
+    .portfolio
+        h2
+            top: 50px
+
+    .footer
+        height: 120vh
+        h2
+            margin: 30vh 0 20vh 0
+        p
+            top: 45vh
+        .message
+            margin: 0
+            width: 40%
+            height: auto
+            bottom: 5vh
+            button
+                transition: .2s
+                &:hover
+                    cursor: pointer
+                    background-color: transparent
+                    border: 2px solid $light
+
+ 
+    .footer
+        .socials
+            position: absolute
+            bottom: 0
+            left: 10vh
+            width: 50px
+            justify-content: space-between
+            align-items: center
+            font-size: 35px
+            height: 250px
+            flex-direction: column
+            &::after
+                content: ''
+                top: 0
+                left: 0
+                height: 15vh
+                width: 2px
+                background-color: $light
+            a
+                display: block
+                height: 50px
+                width: 50px
+                line-height: 50px
+                text-align: center
+                color: $light
+                border-radius: 30px
+                transition: .3s
+                &:hover
+                    color: white
+                    background-color: $light
+
+
+@media screen and (min-width: 1350px)
+
+    .boxes
+        margin-top: 80px
+
+@media screen and (min-width: 1400px)
+    .about
+        h2
+    .container
+        margin: 120px 0 200px 0
+    .technologies
+        margin: 50px 0
+        min-height: 20vh
+        // .box
+        //     margin: 180px 0 210px 0
+    .portfolio
+        h2
+            top: 80px
+    .footer
+        min-height: 125vh

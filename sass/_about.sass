@@ -1,0 +1,118 @@
+.about
+    position: relative
+    min-height: 50vh
+    .text
+        display: block
+        position: relative
+        color: $grey
+        font-weight: normal
+        left: 11vw
+    .web
+        top: 125px
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            left: -10px
+            bottom: -10px
+            height: 1.5px
+            width: 70%
+            background-color: $light
+            animation: line 5s infinite ease 
+    h2
+        display: block
+        position: absolute
+        left: 50%
+        top: 50px
+        transform: translateX(-50%)
+        text-align: center
+        font-size: 40px
+        font-weight: bold
+        color: $dark
+
+        &::after
+            content: ''
+            position: absolute
+            width: 160px
+            height: 15px
+            bottom: 4px
+            left: 70px
+            transform: translateX(-52%)
+            background-color: $light
+            z-index: -1
+    .tap
+        position: absolute
+        right: 7vw
+        top: 170px
+        font-size: 15px
+        color: #5c5c5c4f
+        font-weight: 600
+        letter-spacing: -1px
+        animation: tap 2s infinite
+        i
+            font-size: 12px
+.container
+    display: flex
+    justify-content: space-around
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    text-align: center
+    margin-top: 160px
+    padding-top: 20px
+    color: $dark
+    width: 100%
+    height: auto
+    min-height: 40vh
+    position: relative
+    .card
+        position: relative
+        width: 80vw
+        max-width: 300px
+        max-height: 200px
+        margin: 0 10px
+        .face
+            height: 180px
+            transition: 1s ease
+        .face1
+            box-sizing: border-box
+            position: relative
+            background-color: #ffffff
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 20px
+            z-index: 0
+            .content
+                transition: 1s
+                img
+                    position: absolute
+                    left: 50%
+                    top: 20px
+                    transform: translateX(-50%)
+                    width: 50%
+                h3
+                    text-transform: uppercase
+                    color: $dark
+                    font-weight: 600
+                    position: absolute
+                    left: 50%
+                    bottom: 12px
+                    transform: translateX(-50%)
+        .face2
+            font-size: 15px
+            box-sizing: border-box
+            position: relative
+            background-color: #fff
+            display: flex
+            justify-content: center
+            align-items: center
+            box-shadow: 0 10px 20px $shadow
+            transform: translateY(-100%)
+            overflow: hidden
+            z-index: -1
+            .content
+                p
+                    margin: 0
+                    padding: 0 10px
+                    line-height: 140%
